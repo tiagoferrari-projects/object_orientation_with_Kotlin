@@ -1,17 +1,7 @@
 package one.digitalinnovation.digionebank
 
-class Pessoa {
-    var nome: String = "Tiago"
+abstract class Pessoa ( //classe abstrata nao instancia
+    val nome: String,
+    val cpf: String
+    )
 
-    var cpf: String = "123.456.789-10"
-    private set
-
-    constructor()
-
-    fun pessoaInfo() = "$nome = $cpf"
-    }
-
-fun main(){
-    val tiago = Pessoa()
-    println(tiago.pessoaInfo())
-}
